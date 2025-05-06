@@ -1,0 +1,11 @@
+verdadero
+
+xoXO
+
+Ya salió Compi1
+Carta ingresada: La Torre
+; con numero: 16
+
+La carta: La Torre
+Es carta mayor
+.

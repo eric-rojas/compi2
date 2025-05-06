@@ -1,0 +1,87 @@
+// 1. ORDENAMIENTO BURBUJA
+funcion ordenarBurbuja entero con parametros (arreglo lista, n entero)
+    ingresar i como entero con valor 0
+    ingresar j como entero con valor 0
+    ingresar temp como entero con valor 0
+    
+    para i -> 0 hasta n-1 con incremento 1 hacer
+        para j -> 0 hasta n-i-2 con incremento 1 hacer
+            si arreglo[j] > arreglo[j+1] entonces
+                // Intercambio
+                ingresar temp como entero con valor arreglo[j]
+                arreglo[j] -> arreglo[j+1]
+                arreglo[j+1] -> temp
+            fin si
+        fin para
+    fin para
+    
+    retornar 1 // Indica éxito, ya que no podemos retornar la lista
+fin funcion
+
+// 2. FIBONACCI RECURSIVO
+funcion fibonacci entero con parametros (n entero)
+    si n <= 1 entonces
+        retornar n
+    fin si
+    
+    retornar fibonacci(n-1) + fibonacci(n-2)
+fin funcion
+
+// 3. TORRES DE HANOI RECURSIVO
+procedimiento hanoi con parametros (n entero, origen cadena, auxiliar cadena, destino cadena)
+    si n == 1 entonces
+        imprimir nl "Mover disco 1 desde " + origen + " hasta " + destino
+        retornar
+    fin si
+    
+    ejecutar hanoi(n-1, origen, destino, auxiliar)
+    imprimir nl "Mover disco " + n + " desde " + origen + " hasta " + destino
+    ejecutar hanoi(n-1, auxiliar, origen, destino)
+fin procedimiento
+
+// 4. FUNCIÓN DE ACKERMANN RECURSIVA
+funcion ackermann entero con parametros (m entero, n entero)
+    si m == 0 entonces
+        retornar n + 1
+    fin si
+    
+    si n == 0 entonces
+        retornar ackermann(m-1, 1)
+    fin si
+    
+    retornar ackermann(m-1, ackermann(m, n-1))
+fin funcion
+
+// PROGRAMA PRINCIPAL PARA PROBAR LOS ALGORITMOS
+
+
+// Prueba del ordenamiento burbuja
+imprimir nl "=== PRUEBA DE ORDENAMIENTO BURBUJA ==="
+ingresar Lista(1, entero) arregloBurbuja -> (5, 3, 8, 1, 2, 7, 4)
+ingresar n como entero con valor longitud(arregloBurbuja)     
+imprimir nl "Lista original: " + arregloBurbuja
+
+// Llamar la función (modificará el arreglo original)
+ejecutar ordenarBurbuja(arregloBurbuja, n)
+imprimir nl "Lista ordenada: " + arregloBurbuja
+
+// Prueba de Fibonacci
+imprimir nl "\n=== PRUEBA DE FIBONACCI RECURSIVO ==="
+imprimir nl "Secuencia de Fibonacci:"
+para i -> 0 hasta 10 con incremento i++ hacer
+    imprimir nl "Fibonacci(" + i + ") = " + fibonacci(i)
+fin para
+
+// Prueba de Torres de Hanoi
+imprimir nl "\n=== PRUEBA DE TORRES DE HANOI ==="
+imprimir nl "Solución para 3 discos:"
+ejecutar hanoi(3, "A", "B", "C")
+
+// Prueba de función de Ackermann
+imprimir nl "\n=== PRUEBA DE FUNCIÓN DE ACKERMANN ==="
+imprimir nl "Ackermann(0, 0) = " + ackermann(0, 0)
+imprimir nl "Ackermann(0, 1) = " + ackermann(0, 1)
+imprimir nl "Ackermann(1, 0) = " + ackermann(1, 0)
+imprimir nl "Ackermann(1, 1) = " + ackermann(1, 1)
+imprimir nl "Ackermann(2, 2) = " + ackermann(2, 2)
+// Comentario: Los valores mayores pueden causar desbordamiento por la naturaleza de la función

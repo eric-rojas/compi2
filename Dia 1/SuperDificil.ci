@@ -1,0 +1,49 @@
+//Vectores
+ingresar Lista (1, Entero) digitosPares -> (2,4,6,8,10)
+ingresar Lista (2, Caracter) cuadrado -> (('x','o'), ('x','o'))
+ingresar Lista (3, Cadena) listaCadenas -> ((("hola","mundo"),("a",":)")), (("si","sale"),("Compi","1")))
+
+digitosPares[4] -> 0
+
+cuadrado[1][0] = 'X'
+cuadrado[1][1] = 'O'
+
+imprimir nl digitosPares[4] < digitosPares[0] //verdadero
+imprimir nl cuadrado[0][0] + cuadrado[0][1] + cuadrado[1][0] + cuadrado[1][1] //xoXO
+imprimir nl "Ya salió " + listaCadenas[1][1][0] + listaCadenas[1][1][1]
+
+
+// Objetos
+objeto Carta (
+    nombre Cadena
+    palo Cadena
+    mayor Booleano
+    numero Entero
+    figura Booleano
+)
+
+ingresar objeto Carta torre -> Carta (
+    "La Torre",
+    "",
+    verdadero,
+    16,
+	falso
+)
+
+imprimir  "Carta ingresada: " + torre.nombre
+imprimir nl "; con numero: " + torre.numero
+
+Carta -> metodo describir 
+	imprimir nl "La carta: " + nombre
+	si mayor entonces
+		imprimir "Es carta mayor" 
+	de lo contrario
+		imprimir "Es del palo: " + palo
+	fin si
+	si figura entonces
+		imprimir " y tiene una cara representandola"
+	fin si
+	imprimir nl "."
+fin metodo
+
+ejecutar torre.describir()

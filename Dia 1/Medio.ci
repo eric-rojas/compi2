@@ -1,0 +1,129 @@
+// === ARCHIVO MEDIO ===
+ingresar num1 como entero con valor 10
+ingresar num2 como entero con valor 5
+ingresar dia como entero
+
+/*
+Sentencia Si
+*/
+si num1 + num2 > 15 entonces
+    imprimir nl "La suma es mayor a 15"
+de lo contrario
+    imprimir nl "La suma es menor o igual a 15"
+fin si
+
+si num1 * num2 < 30 && num1 > num2 entonces
+    imprimir nl "El producto es menor que 30 y num1 es mayor que num2"
+de lo contrario
+    imprimir nl "Al menos una de las condiciones no se cumple"
+fin si
+
+si dia > 0 entonces
+    imprimir nl "El número es positivo"
+o si dia < 0 entonces
+    imprimir nl "El número es negativo"
+de lo contrario
+    imprimir nl "La variable dia tiene el valor por defecto 0"
+fin si
+
+/*
+Sentencia
+Selección Múltiple
+*/
+dia -> 5
+segun dia hacer
+    en caso de ser 1 entonces
+        imprimir nl "Lunes"
+        detener
+    en caso de ser 2 entonces
+        imprimir nl "Martes"
+        detener
+    en caso de ser 3 entonces
+        imprimir nl "Miércoles"
+        detener
+    en caso de ser 4 entonces
+        imprimir nl "Jueves"
+        detener
+    en caso de ser 5 entonces
+        imprimir nl "Viernes"
+        detener
+    en caso de ser 6 entonces
+        imprimir nl "Sábado"
+        detener
+    en caso de ser 7 entonces
+        imprimir nl "Domingo"
+        detener
+    de lo contrario entonces
+        imprimir nl "Día no válido"
+        detener
+fin segun
+
+// Ciclo Para
+ingresar suma como entero
+ingresar i como entero
+para i -> 1 hasta 20 con incremento i++ hacer
+    si i % 2 == 0 entonces
+        suma -> suma + i
+    fin si
+fin para
+
+imprimir nl "La suma de los números pares del 1 al 20 es: " + suma // Resultado 110
+
+// Ciclo Mientras
+ingresar contador como entero
+i -> 1
+
+mientras i <= 50 hacer
+    si i % 3 == 0 entonces
+        contador++
+    fin si
+    inc(i)
+fin mientras
+
+imprimir nl "Cantidad de múltiplos de 3 entre 1 y 50: " + contador // Resultado 16
+
+/*
+Procedimiento
+Ciclo mientras
+Continuar
+Función mayuscula y minuscula
+Llamada procedimiento
+*/
+procedimiento procesarTareas con parametros (totalTareas entero)
+    ingresar tarea como entero
+    ingresar resultado como entero
+    imprimir nl minuscula("=== INICIO DEL PROCEDIMIENTO ===")
+    repetir
+        tarea++
+        si tarea % 4 == 0 entonces
+            imprimir nl "Tarea " + tarea + " omitida (múltiplo de 4) "
+            continuar
+        fin si
+
+        resultado -> tarea * 2 + 5
+        imprimir nl "Tarea " + tarea + " procesada -> Resultado: " + resultado
+    hasta que tarea < totalTareas
+    imprimir nl mayuscula("=== fin del procedimiento ===")
+fin procedimiento
+
+ejecutar procesarTareas(15)
+
+/*
+=== inicio del procedimiento ===
+Tarea 1 procesada → Resultado: 7
+Tarea 2 procesada → Resultado: 9
+Tarea 3 procesada → Resultado: 11
+Tarea 4 omitida (múltiplo de 4)
+Tarea 5 procesada → Resultado: 15
+Tarea 6 procesada → Resultado: 17
+Tarea 7 procesada → Resultado: 19
+Tarea 8 omitida (múltiplo de 4)
+Tarea 9 procesada → Resultado: 23
+Tarea 10 procesada → Resultado: 25
+Tarea 11 procesada → Resultado: 27
+Tarea 12 omitida (múltiplo de 4)
+Tarea 13 procesada → Resultado: 31
+Tarea 14 procesada → Resultado: 33
+Tarea 15 procesada → Resultado: 35
+=== FIN DEL PROCESAMIENTO ===
+*/

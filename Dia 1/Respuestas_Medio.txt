@@ -1,0 +1,45 @@
+La suma es menor o igual a 15
+
+Al menos una de las condiciones no se cumple
+
+La variable dia tiene el valor por defecto 0
+
+Viernes
+
+La suma de los números pares del 1 al 20 es: 110
+
+Cantidad de múltiplos de 3 entre 1 y 50: 16
+
+=== inicio del procedimiento ===
+
+Tarea 1 procesada -> Resultado: 7
+
+Tarea 2 procesada -> Resultado: 9
+
+Tarea 3 procesada -> Resultado: 11
+
+Tarea 4 omitida (múltiplo de 4)
+
+Tarea 5 procesada -> Resultado: 15
+
+Tarea 6 procesada -> Resultado: 17
+
+Tarea 7 procesada -> Resultado: 19
+
+Tarea 8 omitida (múltiplo de 4)
+
+Tarea 9 procesada -> Resultado: 23
+
+Tarea 10 procesada -> Resultado: 25
+
+Tarea 11 procesada -> Resultado: 27
+
+Tarea 12 omitida (múltiplo de 4)
+
+Tarea 13 procesada -> Resultado: 31
+
+Tarea 14 procesada -> Resultado: 33
+
+Tarea 15 procesada -> Resultado: 35
+
+=== FIN DEL PROCEDIMIENTO ===

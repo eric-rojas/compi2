@@ -1,0 +1,62 @@
+Proyecto2/
+|--Backend
+    |--Clases
+        |--Abstractas
+            |--Expresiones.js
+            |--Instrucciones.js
+        |--Entorno
+            |--Entorno.js
+            |--Metodo.js
+            |--Metodo.js
+            |--Objeto.js
+            |--Simbolo.js
+            |--SimboloTabla.js
+            |--Tabla.js
+        |--Expresiones
+            |--AccesolD.js
+            |--AccesoObjeto.js
+            |--Aritmetico.js
+            |--Atributo.js
+            |--IncDec.js
+            |--LlamadaFuncion.js
+            |--Logico.js
+            |--Parametro.js
+            |--Primitivo.js
+            |--Relacional.js
+            |--Retornar.js
+        |--Instrucciones
+            |--Asignacion.js
+            |--Bloque.js
+            |--Continuar.js
+            |--DeclaracionlD.js
+            |--Funcion.js
+            |--GuardarObjeto.js
+            |--Imprimir.js
+            |--Para.js
+            |--Si.js
+        |--Utilidades
+            |--Error.js
+            |--OperacionDominante.js
+            |--Salida.js
+            |--Tipo.js
+            |--TipoError.js
+            |--TipoExpresion.js
+            |--Tipolnstruccion.js
+    |--Controlador
+        |--Controlador.js 
+    |--Lenguaje
+        |--Parser.jison
+        |--Parser.js
+    |--Rutas
+        |--Interpreter.js
+    |--Test
+        |--Test.js
+|--App.js
+|--App.ts
+|--package-lock.json
+|--package.json
+|--tsconfig.json
+|--Imputs
+
+
+

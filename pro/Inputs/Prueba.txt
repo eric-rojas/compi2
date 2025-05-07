@@ -1,0 +1,56 @@
+/*ingresar var1 como entero con valor 10
+ingresar var2 como entero con valor 12
+
+imprimir var2++
+
+var2 -> var2 + 1
+imprimir var2
+*/
+/*si var2 == 12 entonces
+    imprimir "SI ES 12"
+de lo contrario
+    imprimir "YA NO SALE"
+fin si
+*/
+
+/*ingresar i como entero con valor 0
+para i -> 0 hasta 5 con incremento i++ hacer
+    si i == 3 entonces
+        regresar
+    fin si
+    imprimir "i = " + i
+fin para*/
+
+funcion resta entero
+    retornar 15 - 10
+fin funcion
+
+funcion suma entero con parametros (valor1 entero, valor2 entero)
+    retornar valor1 + valor2
+fin funcion
+
+imprimir "Resta = " + resta()
+imprimir "Suma = " + suma(12, 10)
+
+funcion triangulo cadena
+    ingresar i como entero con valor 0
+    ingresar j como entero con valor 0
+    ingresar altura como entero con valor 5
+    ingresar linea como cadena con valor ""
+    ingresar figura como cadena con valor ""
+
+    para i -> 1 hasta altura + 1 con incremento i++ hacer
+        linea -> ""
+        para j -> 1 hasta i con incremento i++ hacer
+            linea -> linea + "*"
+        fin para
+        figura -> figura + linea + "\n"
+    fin para
+    retornar figura
+fin funcion
+
+imprimir "multiplicacion = " + multiplicacion(10, 5)
+
+imprimir '2' == 50
+
+imprimir "Si llegaste hasta aquí, ¡felicidades!🎊\nEstarás en Compi2\ten el \"2s2025\" 😎"

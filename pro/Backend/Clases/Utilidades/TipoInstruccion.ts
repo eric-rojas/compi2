@@ -1,0 +1,13 @@
+export enum TipoInstruccion {
+    IMPRIMIR,
+    CREAR_VARIABLE,
+    CREAR_OBJETO,
+    ASIGNACION,
+    INCREMENTO,
+    DECREMENTO,
+    BLOQUE_INSTRUCCIONES,
+    SI,
+    PARA,
+    DECLARAR_FUNCION,
+    CONTINUAR
+}
